@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keyboard events</title>
+</head>
+<body>
+	<p>PRESS a to find out what happens </p>
+	<p>PRESS A to find out what happens </p>
+
+<script > 
+	window.addEventListener("keypress",checkKeyPress,false)
+	function checkKeyPress(key) {
+	
+		if (key.keyCode=="65") {
+			alert("The A latter key has been pressed!!!")
+		}
+
+	}
+</script>
+</body>
+</html>

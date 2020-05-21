@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onfocus/onblur</title>
+</head>
+<body>
+	<p>Foucs korle bacground red and text blue </p>
+	<p>blur korle background blue and text red</p>
+	<input type="text" onfocus="handleOnFoucus(this)" onblur="handleOnBlur(this)"/>
+<script >
+		function handleOnFoucus(x){
+			x.style.color="red";
+			x.style.backgroundColor="blue"
+		}
+		function handleOnBlur(x){
+			x.style.color="blue";
+			x.style.backgroundColor="red"
+		}
+	</script>
+</body>
+</html>
